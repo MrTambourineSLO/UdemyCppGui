@@ -22,7 +22,7 @@ include(Warnings)
 include(ConfigSafeGuards)
 
 # add_clang_format_target() # needs python
-
+set(CMAKE_OSX_ARCHITECTURES arm64)
 set (VCPKG_DIR ${CMAKE_SOURCE_DIR}/external/vcpkg)
 # you can set any other vcpkg installation on your system
 # set (VCPKG_DIR ${CMAKE_SOURCE_DIR}/../../../../../vcpkg)
